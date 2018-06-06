@@ -3,11 +3,11 @@ package com.company;
 import com.sun.org.apache.xpath.internal.operations.Equals;
 import com.sun.tools.corba.se.idl.constExpr.Equal;
 
-import java.util.Scanner;
+
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 	    /*
 	    > greater than
 	    < less than
@@ -21,19 +21,30 @@ public class Main {
 	    || or
 	    ! NOT
 	     */
-		boolean bool = true;
-	    int a = 0;
-	    int b = 2;
-	    int c = -1;
-	    int d = -1;
-	    if(a==0 && b+c==1) {
-			System.out.println("this and that");
-		}
-		if(a==0 || b==1) {
-			System.out.println("this or that");
-		}
-		System.out.println("not inverse");
-		System.out.println(bool);
-		System.out.println(!bool);
+        int a = 2;
+        int b = 4;
+        int x = 6;
+        int y = 1;
+
+        System.out.println("a: "+a+" b: "+b+" x: "+x+" y: "+y);
+
+
+	    if (a <= b) {
+            System.out.println("a is less than or equal to b");
+        }
+
+        if (a >= b) {
+            System.out.println("a is more than or equal to b");
+        }
+
+        if (x == y) {
+            System.out.println("x is y");
+        }
+
+        if (x != y) {
+            System.out.println("x is not y");
+        }
+
+
     }
 }
